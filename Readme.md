@@ -13,7 +13,7 @@ Type in following commands
 
 ```shell
 npm install
-npm run start
+SLACK_TOKEN=... npm run start
 ```
 
 Feel free to add more places!

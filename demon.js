@@ -2,34 +2,7 @@ const open = require("open");
 const axios = require("axios");
 const { format, add } = require("date-fns");
 const notifier = require("node-notifier");
-const player = require("play-sound")((opts = {}));
 
-const lookupTable = new Map([
-  [
-    "arena",
-    "https://www.doctolib.de/institut/berlin/ciz-berlin-berlin?pid=practice-158431",
-  ],
-  [
-    "tempelhof",
-    "https://www.doctolib.de/institut/berlin/ciz-berlin-berlin?pid=practice-158433",
-  ],
-  [
-    "messe",
-    "https://www.doctolib.de/institut/berlin/ciz-berlin-berlin?pid=practice-158434",
-  ],
-  [
-    "velodrom",
-    "https://www.doctolib.de/institut/berlin/ciz-berlin-berlin?pid=practice-158435",
-  ],
-  [
-    "tegel",
-    "https://www.doctolib.de/institut/berlin/ciz-berlin-berlin?pid=practice-158436",
-  ],
-  [
-    "erika",
-    "https://www.doctolib.de/institut/berlin/ciz-berlin-berlin?pid=practice-158437",
-  ],
-]);
 const rateLimit = 1000 * 2;
 
 function log(...msg) {
@@ -104,12 +77,6 @@ function notify() {
   notifier.notify({
     title: "Vacination",
     message: "Appointment!",
-  });
-
-  player.play("./bell-ring-01.wav", function (err) {
-    if (error) {
-      error(err);
-    }
   });
 }
 
@@ -222,5 +189,5 @@ data.forEach(function (links) {
 
 log("Started checking periodically...");
 log(
-  "Just keep it running, it will play a sound and open a browser when an appointment opens up"
+  "Just keep it running, it will send a slack message when an appointment opens up"
 );
