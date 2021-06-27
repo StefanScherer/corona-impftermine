@@ -141,11 +141,11 @@ const data = [
     xhrLink: `https://www.doctolib.de/availabilities.json?start_date=2021-06-26&visit_motive_ids=2928202&agenda_ids=493073&insurance_sector=public&practice_ids=192701&destroy_temporary=true&limit=3`,
     bookingLink: `https://www.doctolib.de/medizinisches-versorgungszentrum-mvz/herzogenaurach/herzodoc-mvz-gmbh?insurance_sector=public`,
   },
-  {
-    vaccine: "astrazeneca",
-    xhrLink: `https://www.doctolib.de/availabilities.json?start_date=2021-06-26&visit_motive_ids=2928204&agenda_ids=493095&insurance_sector=public&practice_ids=192701&destroy_temporary=true&limit=3`,
-    bookingLink: `https://www.doctolib.de/medizinisches-versorgungszentrum-mvz/herzogenaurach/herzodoc-mvz-gmbh?insurance_sector=public`,
-  },
+  // {
+  //   vaccine: "astrazeneca",
+  //   xhrLink: `https://www.doctolib.de/availabilities.json?start_date=2021-06-26&visit_motive_ids=2928204&agenda_ids=493095&insurance_sector=public&practice_ids=192701&destroy_temporary=true&limit=3`,
+  //   bookingLink: `https://www.doctolib.de/medizinisches-versorgungszentrum-mvz/herzogenaurach/herzodoc-mvz-gmbh?insurance_sector=public`,
+  // },
   {
     vaccine: "biontech",
     xhrLink: `https://www.doctolib.de/availabilities.json?start_date=2021-06-26&visit_motive_ids=2827555&agenda_ids=479814&insurance_sector=public&practice_ids=153050&destroy_temporary=true&limit=3`,
