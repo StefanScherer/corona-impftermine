@@ -9,7 +9,7 @@ services:
       - ./.env
     environment:
       NODE_ENV: development
-      SLACK_TOKEN
+      SLACK_TOKEN: ${SLACK_TOKEN}
     ports:
       - 9229:9229
     command: ["node", "--inspect=0.0.0.0:9229", "demon.js"]

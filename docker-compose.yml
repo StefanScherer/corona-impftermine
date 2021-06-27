@@ -5,5 +5,5 @@ services:
     image: stefanscherer/corona-impftermine
     environment:
       NODE_ENV: production
-      SLACK_TOKEN
+      SLACK_TOKEN: ${SLACK_TOKEN}
     restart: always
