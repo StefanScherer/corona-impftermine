@@ -2,6 +2,8 @@
 
 forked by berlin-vac-checker by Pita
 https://github.com/Pita/berlin-vac-appointment-checker 
+forked by asoov
+https://github.com/asoov/habenwirnochimpfstoff
 
 Small node.js script that checks in short periods if Doctolib has a vaccination appointment available. If so, immediately opens a browser window for you so you can book quickly. This script worked mid of May 2021. If Doctolib changes their API, it might stop working. Only tested on intel Mac OS X.
 
